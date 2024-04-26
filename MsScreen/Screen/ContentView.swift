@@ -1,0 +1,60 @@
+//
+//  ContentView.swift
+//  MsScreen
+//
+//  Created by kintan on 26/04/24.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    
+    var category : [Category] = [
+        Category(name: "MS Test", desc: "Testing the display response.", image: "category1"),
+        Category(name: "Text Test",desc: "Testing the display of text on the display", image: "category2"),
+        Category(name: "Color Test", desc : "Testing the display of colors on the display",image: "category4"),
+        Category(name: "Introduction", desc : "Information about the application",image: "category5")]
+    
+    var body: some View {
+        NavigationView {
+            ZStack(alignment: .topLeading){
+                Color.accentColor
+                VStack(alignment : .leading,spacing : 16){
+                    NavigationLink {
+                        Text("I am Detail Screen")
+                    } label: {
+                        CategoryView(category: category[0])
+                    }
+                    NavigationLink {
+                        Text("I am Detail Screen")
+                    } label: {
+                        CategoryView(category: category[1])
+                    }
+                    NavigationLink {
+                        ColorListView()
+                    } label: {
+                        CategoryView(category: category[2])
+                    }
+                    NavigationLink {
+                        AppInfoView()
+                    } label: {
+                        CategoryView(category: category[3])
+                    }
+                    PhoneInfoView()
+                }.padding(20).padding(.top,40)
+                
+                
+            }.ignoresSafeArea()
+        }
+        
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+
+
+
+
