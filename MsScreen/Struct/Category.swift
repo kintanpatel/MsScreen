@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+struct Category {
+    var name : String
+    var desc : String
+    var image : String
+}

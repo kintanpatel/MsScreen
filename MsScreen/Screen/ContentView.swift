@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .topLeading){
-                Color.accentColor
+                LinearGradient(colors: [.yellow,.green], startPoint: .top, endPoint: .bottom)
                 VStack(alignment : .leading,spacing : 16){
                     NavigationLink {
                         Text("I am Detail Screen")
@@ -42,7 +42,6 @@ struct ContentView: View {
                     }
                     PhoneInfoView()
                 }.padding(20).padding(.top,40)
-                
                 
             }.ignoresSafeArea()
         }

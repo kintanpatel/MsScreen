@@ -11,6 +11,12 @@
 		AC71A5142BDBBAA1008FE87B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71A5132BDBBAA1008FE87B /* ContentView.swift */; };
 		AC71A5162BDBBAA4008FE87B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC71A5152BDBBAA4008FE87B /* Assets.xcassets */; };
 		AC71A5192BDBBAA4008FE87B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC71A5182BDBBAA4008FE87B /* Preview Assets.xcassets */; };
+		AC71A5202BDBE1A1008FE87B /* ColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71A51F2BDBE1A1008FE87B /* ColorListView.swift */; };
+		AC71A5222BDBE1E5008FE87B /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71A5212BDBE1E5008FE87B /* AppInfoView.swift */; };
+		ACE5AA482BDCBF7500E5681B /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA472BDCBF7500E5681B /* DeviceInfo.swift */; };
+		ACE5AA4B2BDCC17C00E5681B /* PhoneInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA4A2BDCC17C00E5681B /* PhoneInfoView.swift */; };
+		ACE5AA4D2BDCC34A00E5681B /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA4C2BDCC34A00E5681B /* CategoryView.swift */; };
+		ACE5AA502BDCC38800E5681B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA4F2BDCC38800E5681B /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		AC71A5132BDBBAA1008FE87B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC71A5152BDBBAA4008FE87B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC71A5182BDBBAA4008FE87B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC71A51F2BDBE1A1008FE87B /* ColorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorListView.swift; sourceTree = "<group>"; };
+		AC71A5212BDBE1E5008FE87B /* AppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
+		ACE5AA472BDCBF7500E5681B /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		ACE5AA4A2BDCC17C00E5681B /* PhoneInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfoView.swift; sourceTree = "<group>"; };
+		ACE5AA4C2BDCC34A00E5681B /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		ACE5AA4F2BDCC38800E5681B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		AC71A5102BDBBAA1008FE87B /* MsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				ACE5AA512BDCC3B600E5681B /* Screen */,
+				ACE5AA4E2BDCC37F00E5681B /* Struct */,
+				ACE5AA492BDCC14500E5681B /* Views */,
+				ACE5AA462BDCBF6800E5681B /* Utility */,
 				AC71A5112BDBBAA1008FE87B /* MsScreenApp.swift */,
-				AC71A5132BDBBAA1008FE87B /* ContentView.swift */,
 				AC71A5152BDBBAA4008FE87B /* Assets.xcassets */,
 				AC71A5172BDBBAA4008FE87B /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				AC71A5182BDBBAA4008FE87B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACE5AA462BDCBF6800E5681B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ACE5AA472BDCBF7500E5681B /* DeviceInfo.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		ACE5AA492BDCC14500E5681B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACE5AA4A2BDCC17C00E5681B /* PhoneInfoView.swift */,
+				ACE5AA4C2BDCC34A00E5681B /* CategoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACE5AA4E2BDCC37F00E5681B /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				ACE5AA4F2BDCC38800E5681B /* Category.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		ACE5AA512BDCC3B600E5681B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				AC71A5132BDBBAA1008FE87B /* ContentView.swift */,
+				AC71A51F2BDBE1A1008FE87B /* ColorListView.swift */,
+				AC71A5212BDBE1E5008FE87B /* AppInfoView.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC71A5222BDBE1E5008FE87B /* AppInfoView.swift in Sources */,
+				ACE5AA4D2BDCC34A00E5681B /* CategoryView.swift in Sources */,
 				AC71A5142BDBBAA1008FE87B /* ContentView.swift in Sources */,
 				AC71A5122BDBBAA1008FE87B /* MsScreenApp.swift in Sources */,
+				ACE5AA4B2BDCC17C00E5681B /* PhoneInfoView.swift in Sources */,
+				AC71A5202BDBE1A1008FE87B /* ColorListView.swift in Sources */,
+				ACE5AA482BDCBF7500E5681B /* DeviceInfo.swift in Sources */,
+				ACE5AA502BDCC38800E5681B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MsScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,6 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MsScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
