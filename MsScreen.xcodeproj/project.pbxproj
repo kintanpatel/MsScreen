@@ -17,6 +17,10 @@
 		ACE5AA4B2BDCC17C00E5681B /* PhoneInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA4A2BDCC17C00E5681B /* PhoneInfoView.swift */; };
 		ACE5AA4D2BDCC34A00E5681B /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA4C2BDCC34A00E5681B /* CategoryView.swift */; };
 		ACE5AA502BDCC38800E5681B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA4F2BDCC38800E5681B /* Category.swift */; };
+		ACE5AA532BDCDF6B00E5681B /* ScalableTextScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA522BDCDF6B00E5681B /* ScalableTextScreen.swift */; };
+		ACE5AA552BDCED3000E5681B /* AppScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA542BDCED3000E5681B /* AppScreenView.swift */; };
+		ACE5AA582BDCF3CF00E5681B /* Gradient+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA572BDCF3CF00E5681B /* Gradient+Ext.swift */; };
+		ACE5AA5A2BDCF5D200E5681B /* FullScreenColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA592BDCF5D200E5681B /* FullScreenColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		ACE5AA4A2BDCC17C00E5681B /* PhoneInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfoView.swift; sourceTree = "<group>"; };
 		ACE5AA4C2BDCC34A00E5681B /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		ACE5AA4F2BDCC38800E5681B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ACE5AA522BDCDF6B00E5681B /* ScalableTextScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalableTextScreen.swift; sourceTree = "<group>"; };
+		ACE5AA542BDCED3000E5681B /* AppScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenView.swift; sourceTree = "<group>"; };
+		ACE5AA572BDCF3CF00E5681B /* Gradient+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Ext.swift"; sourceTree = "<group>"; };
+		ACE5AA592BDCF5D200E5681B /* FullScreenColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 		AC71A5102BDBBAA1008FE87B /* MsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				ACE5AA562BDCF3BB00E5681B /* Ext */,
 				ACE5AA512BDCC3B600E5681B /* Screen */,
 				ACE5AA4E2BDCC37F00E5681B /* Struct */,
 				ACE5AA492BDCC14500E5681B /* Views */,
@@ -95,6 +104,7 @@
 			children = (
 				ACE5AA4A2BDCC17C00E5681B /* PhoneInfoView.swift */,
 				ACE5AA4C2BDCC34A00E5681B /* CategoryView.swift */,
+				ACE5AA542BDCED3000E5681B /* AppScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,8 +123,18 @@
 				AC71A5132BDBBAA1008FE87B /* ContentView.swift */,
 				AC71A51F2BDBE1A1008FE87B /* ColorListView.swift */,
 				AC71A5212BDBE1E5008FE87B /* AppInfoView.swift */,
+				ACE5AA522BDCDF6B00E5681B /* ScalableTextScreen.swift */,
+				ACE5AA592BDCF5D200E5681B /* FullScreenColorView.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		ACE5AA562BDCF3BB00E5681B /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				ACE5AA572BDCF3CF00E5681B /* Gradient+Ext.swift */,
+			);
+			path = Ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +209,14 @@
 			files = (
 				AC71A5222BDBE1E5008FE87B /* AppInfoView.swift in Sources */,
 				ACE5AA4D2BDCC34A00E5681B /* CategoryView.swift in Sources */,
+				ACE5AA532BDCDF6B00E5681B /* ScalableTextScreen.swift in Sources */,
 				AC71A5142BDBBAA1008FE87B /* ContentView.swift in Sources */,
+				ACE5AA552BDCED3000E5681B /* AppScreenView.swift in Sources */,
+				ACE5AA582BDCF3CF00E5681B /* Gradient+Ext.swift in Sources */,
 				AC71A5122BDBBAA1008FE87B /* MsScreenApp.swift in Sources */,
 				ACE5AA4B2BDCC17C00E5681B /* PhoneInfoView.swift in Sources */,
 				AC71A5202BDBE1A1008FE87B /* ColorListView.swift in Sources */,
+				ACE5AA5A2BDCF5D200E5681B /* FullScreenColorView.swift in Sources */,
 				ACE5AA482BDCBF7500E5681B /* DeviceInfo.swift in Sources */,
 				ACE5AA502BDCC38800E5681B /* Category.swift in Sources */,
 			);

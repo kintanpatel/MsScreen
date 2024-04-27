@@ -26,7 +26,7 @@ struct ContentView: View {
                         CategoryView(category: category[0])
                     }
                     NavigationLink {
-                        Text("I am Detail Screen")
+                        ScalableTextListScreen()
                     } label: {
                         CategoryView(category: category[1])
                     }
