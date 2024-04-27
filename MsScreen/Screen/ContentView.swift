@@ -21,7 +21,7 @@ struct ContentView: View {
                 LinearGradient(colors: [.yellow,.green], startPoint: .top, endPoint: .bottom)
                 VStack(alignment : .leading,spacing : 16){
                     NavigationLink {
-                        Text("I am Detail Screen")
+                        ScreenTestView()
                     } label: {
                         CategoryView(category: category[0])
                     }

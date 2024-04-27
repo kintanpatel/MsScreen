@@ -21,6 +21,7 @@
 		ACE5AA552BDCED3000E5681B /* AppScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA542BDCED3000E5681B /* AppScreenView.swift */; };
 		ACE5AA582BDCF3CF00E5681B /* Gradient+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA572BDCF3CF00E5681B /* Gradient+Ext.swift */; };
 		ACE5AA5A2BDCF5D200E5681B /* FullScreenColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA592BDCF5D200E5681B /* FullScreenColorView.swift */; };
+		ACE5AA5C2BDCFCE100E5681B /* ScreenTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE5AA5B2BDCFCE100E5681B /* ScreenTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		ACE5AA542BDCED3000E5681B /* AppScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreenView.swift; sourceTree = "<group>"; };
 		ACE5AA572BDCF3CF00E5681B /* Gradient+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Ext.swift"; sourceTree = "<group>"; };
 		ACE5AA592BDCF5D200E5681B /* FullScreenColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenColorView.swift; sourceTree = "<group>"; };
+		ACE5AA5B2BDCFCE100E5681B /* ScreenTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				AC71A5212BDBE1E5008FE87B /* AppInfoView.swift */,
 				ACE5AA522BDCDF6B00E5681B /* ScalableTextScreen.swift */,
 				ACE5AA592BDCF5D200E5681B /* FullScreenColorView.swift */,
+				ACE5AA5B2BDCFCE100E5681B /* ScreenTestView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			files = (
 				AC71A5222BDBE1E5008FE87B /* AppInfoView.swift in Sources */,
 				ACE5AA4D2BDCC34A00E5681B /* CategoryView.swift in Sources */,
+				ACE5AA5C2BDCFCE100E5681B /* ScreenTestView.swift in Sources */,
 				ACE5AA532BDCDF6B00E5681B /* ScalableTextScreen.swift in Sources */,
 				AC71A5142BDBBAA1008FE87B /* ContentView.swift in Sources */,
 				ACE5AA552BDCED3000E5681B /* AppScreenView.swift in Sources */,

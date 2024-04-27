@@ -8,19 +8,17 @@
 import Foundation
 import SwiftUI
 
-struct SpeedColumnView: View {
+
+private struct SpeedColumnView: View {
     let speed: Double
     let color: Color
-    let columnWidth: CGFloat = 50
-    let columnHeight: CGFloat = 200
+    let columnWidth: CGFloat = 60
+    let columnHeight: CGFloat = 60
     
     @State private var yOffset: CGFloat = 0
     
     var body: some View {
         VStack {
-            Text(String(format: "%.1f ms", speed))
-                .foregroundColor(.white)
-                .padding(.bottom, 5)
             Rectangle()
                 .fill(color)
                 .frame(width: columnWidth, height: columnHeight)
@@ -34,26 +32,43 @@ struct SpeedColumnView: View {
     func animateColumn() {
         let animationDuration = speed / 1000 // Convert speed to seconds
         withAnimation(Animation.linear(duration: animationDuration).repeatForever(autoreverses: true)) {
-            yOffset = -columnHeight
+            yOffset = UIScreen.main.bounds.height
         }
     }
 }
 
 struct ScreenTestView: View {
-    let columnSpeeds: [Double] = [50, 100, 150, 200, 250] // Example speeds in milliseconds
+    let columnSpeeds: [Double] = [3000, 2000, 1000, 500, 250] // Example speeds in milliseconds
+    
+    @State private var lineColor : Color  = .red
+    
     
     var body: some View {
-        HStack(spacing: 20) {
-            ForEach(0..<columnSpeeds.count) { index in
-                SpeedColumnView(speed: columnSpeeds[index], color: .blue)
-            }
+        AppScreenView(showBackAsButton : true){
+            VStack(alignment: .leading) {
+                HStack(alignment: .top, spacing: 10) {
+                    ForEach(0..<columnSpeeds.count,id: \.self) { index in
+                        ZStack(alignment : .top){
+                            if (index%2 != 0){
+                                Color.black.opacity(0.1)
+                            }
+                            VStack{
+                                Text("\(columnSpeeds[index].formatted()) ms").font(.system(size: 12)).lineLimit(1).foregroundColor(.white)
+                                SpeedColumnView(speed: columnSpeeds[index], color: .blue)
+                                
+                            }
+                            Spacer()
+                        }
+                    }
+                }
+                Spacer()
+            }.padding().padding(.top,40)
         }
-        .padding()
     }
 }
 
-struct ScreenTestView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScreenTestView()
-    }
-}
+
+#Preview(body: {
+    ScreenTestView()
+    
+})
