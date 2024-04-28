@@ -22,10 +22,8 @@ Detect dead pixels on your screen effortlessly with our app. Displaying various 
 <img src="https://github.com/Kintanpatel4393/MsScreen/blob/main/SS/06.jpeg" width="40%" vspace="20" hspace="20">
 
 ## Pre-requisites
- * Xcode SDK v15.1
- * minimum iOS Version v15.0
-
-
+ * Xcode Vesrion v15.1
+ * Minimum iOS Version v15.0
 
 
 
