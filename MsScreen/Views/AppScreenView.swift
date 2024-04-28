@@ -50,7 +50,7 @@ struct AppScreenView<Content : View>: View {
                         .foregroundColor(.white)
                     }
                 }
-            }.padding(.bottom)
+            }.padding(.bottom,20)
         }.ignoresSafeArea()
     }
 }

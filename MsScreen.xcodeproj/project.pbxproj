@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC45B1972BDE5F7C0042C954 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45B1962BDE5F7C0042C954 /* SplashScreenView.swift */; };
 		AC71A5122BDBBAA1008FE87B /* MsScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71A5112BDBBAA1008FE87B /* MsScreenApp.swift */; };
 		AC71A5142BDBBAA1008FE87B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71A5132BDBBAA1008FE87B /* ContentView.swift */; };
 		AC71A5162BDBBAA4008FE87B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC71A5152BDBBAA4008FE87B /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC45B1962BDE5F7C0042C954 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		AC71A50E2BDBBAA1008FE87B /* MsScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MsScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC71A5112BDBBAA1008FE87B /* MsScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsScreenApp.swift; sourceTree = "<group>"; };
 		AC71A5132BDBBAA1008FE87B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				ACE5AA522BDCDF6B00E5681B /* ScalableTextScreen.swift */,
 				ACE5AA592BDCF5D200E5681B /* FullScreenColorView.swift */,
 				ACE5AA5B2BDCFCE100E5681B /* ScreenTestView.swift */,
+				AC45B1962BDE5F7C0042C954 /* SplashScreenView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				AC71A5142BDBBAA1008FE87B /* ContentView.swift in Sources */,
 				ACE5AA552BDCED3000E5681B /* AppScreenView.swift in Sources */,
 				ACE5AA582BDCF3CF00E5681B /* Gradient+Ext.swift in Sources */,
+				AC45B1972BDE5F7C0042C954 /* SplashScreenView.swift in Sources */,
 				AC71A5122BDBBAA1008FE87B /* MsScreenApp.swift in Sources */,
 				ACE5AA4B2BDCC17C00E5681B /* PhoneInfoView.swift in Sources */,
 				AC71A5202BDBE1A1008FE87B /* ColorListView.swift in Sources */,

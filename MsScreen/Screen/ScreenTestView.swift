@@ -8,31 +8,31 @@
 import Foundation
 import SwiftUI
 
-
 private struct SpeedColumnView: View {
     let speed: Double
     let color: Color
     let columnWidth: CGFloat = 60
     let columnHeight: CGFloat = 60
     
-    @State private var yOffset: CGFloat = 0
+    @State private var yOffset: CGFloat = 0 // Initial offset for animation
     
     var body: some View {
         VStack {
             Rectangle()
                 .fill(color)
                 .frame(width: columnWidth, height: columnHeight)
-                .offset(y: yOffset)
+                .offset(y: yOffset) // Apply vertical offset for animation
         }
         .onAppear {
-            animateColumn()
+            animateColumn() // Start animation when the view appears
         }
     }
     
+    // Function to animate the column's movement
     func animateColumn() {
         let animationDuration = speed / 1000 // Convert speed to seconds
         withAnimation(Animation.linear(duration: animationDuration).repeatForever(autoreverses: true)) {
-            yOffset = UIScreen.main.bounds.height
+            yOffset = UIScreen.main.bounds.height // Move the column to the bottom of the screen
         }
     }
 }
@@ -42,7 +42,6 @@ struct ScreenTestView: View {
     
     @State private var lineColor : Color  = .red
     
-    
     var body: some View {
         AppScreenView(showBackAsButton : true){
             VStack(alignment: .leading) {
@@ -50,25 +49,23 @@ struct ScreenTestView: View {
                     ForEach(0..<columnSpeeds.count,id: \.self) { index in
                         ZStack(alignment : .top){
                             if (index%2 != 0){
-                                Color.black.opacity(0.1)
+                                Color.black.opacity(0.1) // Add background color for alternating columns
                             }
                             VStack{
-                                Text("\(columnSpeeds[index].formatted()) ms").font(.system(size: 12)).lineLimit(1).foregroundColor(.white)
-                                SpeedColumnView(speed: columnSpeeds[index], color: .blue)
+                                Text("\(columnSpeeds[index].formatted()) ms").font(.system(size: 12)).lineLimit(1).foregroundColor(.white) // Display speed label
+                                SpeedColumnView(speed: columnSpeeds[index], color: .blue) // Display animated column
                                 
                             }
-                            Spacer()
+                            Spacer() // Spacer to push columns to the left
                         }
                     }
                 }
-                Spacer()
-            }.padding().padding(.top,40)
+                Spacer() // Spacer to push content to the top
+            }.padding().padding(.top,40) // Apply padding
         }
     }
 }
 
-
 #Preview(body: {
-    ScreenTestView()
-    
+    ScreenTestView() // Display preview of ScreenTestView
 })

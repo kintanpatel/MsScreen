@@ -41,7 +41,7 @@ struct ContentView: View {
                         CategoryView(category: category[3])
                     }
                     PhoneInfoView()
-                }.padding(20).padding(.top,40)
+                }.padding().padding(.top,44).padding(.bottom,-44)
                 
             }.ignoresSafeArea()
         }

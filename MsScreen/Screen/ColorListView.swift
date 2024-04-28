@@ -23,8 +23,6 @@ struct ColorListView: View {
                             RambowCell()
                                 .frame(width: 100, height: 100)
                         }
-
-                        
                     } else {
                         NavigationLink {
                             ZStack{
@@ -33,8 +31,6 @@ struct ColorListView: View {
                         } label: {
                             ColorCell(color: color)
                         }
-
-                        
                     }
                 }
             }.padding()
