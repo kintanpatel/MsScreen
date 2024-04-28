@@ -24,12 +24,12 @@ struct CategoryView: View {
                 // Display category name
                 Text(category.name)
                     .fontWeight(.bold)
-                    .foregroundStyle(.white)
+                    .applyapplyForegroundStyle(.white)
                 
                 // Display category description
                 Text(category.desc)
                     .font(.system(size: 12))
-                    .foregroundStyle(.white)
+                    .applyapplyForegroundStyle(.white)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)

@@ -34,7 +34,7 @@ struct SplashScreenView: View {
                         self.opacity = 1.00
                     }
                 }
-            }.ignoresSafeArea().onAppear(perform: {
+            }.expandViewOutOfSafeArea(.all).onAppear(perform: {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3.0){
                     self.isActive = true
                 }

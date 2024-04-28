@@ -18,32 +18,32 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .topLeading){
-                LinearGradient(colors: [.yellow,.green], startPoint: .top, endPoint: .bottom)
+                LinearGradient(colors: [.yellow,.green], startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
                 VStack(alignment : .leading,spacing : 16){
                     NavigationLink {
-                        ScreenTestView()
+                        ScreenTestView().navigationBarHidden(true)
                     } label: {
                         CategoryView(category: category[0])
                     }
                     NavigationLink {
-                        ScalableTextListScreen()
+                        ScalableTextListScreen().navigationBarHidden(true)
                     } label: {
                         CategoryView(category: category[1])
                     }
                     NavigationLink {
-                        ColorListView()
+                        ColorListView().navigationBarHidden(true)
                     } label: {
                         CategoryView(category: category[2])
                     }
                     NavigationLink {
-                        AppInfoView()
+                        AppInfoView().navigationBarHidden(true)
                     } label: {
                         CategoryView(category: category[3])
                     }
                     PhoneInfoView()
-                }.padding().padding(.top,44).padding(.bottom,-44)
+                }.padding()
                 
-            }.ignoresSafeArea()
+            }
         }
         
     }

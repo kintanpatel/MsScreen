@@ -13,7 +13,7 @@ struct ScalableTextListScreen: View {
         AppScreenView(showBackAsButton: true){
             List(5..<51, id: \.self) { index in
                 ScalableTextListItem(fontSize: CGFloat(index) * 2)
-                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                     .listRowBackground(Color.accentColor)
             }
             .listStyle(.plain)
@@ -30,7 +30,7 @@ struct ScalableTextListItem: View {
                 ForEach(0..<10){ _ in
                     Text("\(Int(fontSize))dpi")
                         .font(.system(size: fontSize))
-                        .foregroundStyle(.white)
+                        .applyapplyForegroundStyle(.white)
                         .lineLimit(1)
                 }
             }

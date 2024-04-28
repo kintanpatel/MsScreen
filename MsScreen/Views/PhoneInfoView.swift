@@ -18,8 +18,8 @@ struct PhoneInfoView  : View {
     let refreshRate = DeviceInfo.refreshRate()
     
     var body : some View{
-        VStack(alignment: .leading,spacing: 10,content: {
-            Text("Phone Information").font(.title).foregroundStyle(.white)
+        VStack(alignment: .leading,spacing: 5,content: {
+            Text("Phone Information").font(.title).applyapplyForegroundStyle(.white)
             InfoView(label: "Device", value: deviceModel)
             InfoView(label: "iOS version", value: iOSVersion)
             InfoView(label: "Screen size", value: screenSize)
@@ -36,9 +36,9 @@ struct InfoView : View {
     var value : String
     var body: some View{
         HStack{
-            Text(label).foregroundStyle(.white)
+            Text(label).applyapplyForegroundStyle(.white)
             Spacer()
-            Text(value).foregroundStyle(.white)
+            Text(value).applyapplyForegroundStyle(.white)
         }
     }
 }

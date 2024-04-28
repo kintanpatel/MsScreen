@@ -7,11 +7,16 @@
 
 import SwiftUI
 
-@main
-struct MsScreenApp: App {
-    var body: some Scene {
-        WindowGroup {
-            SplashScreenView()
+
+@available(iOS 14.0, macOS 10.16, *)
+struct MsScreenApp {
+    @main
+    struct MsScreenApp: App {
+
+        var body: some Scene {
+            WindowGroup {
+                SplashScreenView()
+            }
         }
     }
 }

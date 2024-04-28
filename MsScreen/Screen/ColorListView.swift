@@ -8,35 +8,61 @@
 import SwiftUI
 
 struct ColorListView: View {
-    let colors: [Color] = [.red, .green, .blue, .yellow, .cyan, .pink, .black, .white, .clear]
-    
     var body: some View {
         AppScreenView {
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 10) {
-                ForEach(colors, id: \.self) { color in
-                    if color == .clear {
-                        NavigationLink {
-                            AppScreenView(showBackAsButton:true) {
-                                RambowCell()
-                            }
-                        } label: {
+            VStack{
+                HStack{
+                    NavigationLink {
+                        ZStack{
+                            FullScreenColorView(color: .red)
+                        }
+                    } label: {
+                        ColorCell(color: .red)
+                    }
+                    NavigationLink {
+                        ZStack{
+                            FullScreenColorView(color: .green)
+                        }
+                    } label: {
+                        ColorCell(color: .green)
+                    }
+                    NavigationLink {
+                        ZStack{
+                            FullScreenColorView(color: .blue)
+                        }
+                    } label: {
+                        ColorCell(color: .blue)
+                    }
+                    
+                    
+                }
+                HStack{
+                    NavigationLink {
+                        ZStack{
+                            FullScreenColorView(color: .yellow)
+                        }
+                    } label: {
+                        ColorCell(color: .yellow)
+                    }
+                    NavigationLink {
+                        ZStack{
+                            FullScreenColorView(color: Color(red: 0, green: 255/255, blue: 255/255))
+                        }
+                    } label: {
+                        ColorCell(color: Color(red: 0, green: 255/255, blue: 255/255))
+                    }
+                    
+                    NavigationLink {
+                        AppScreenView(showBackAsButton:true) {
                             RambowCell()
-                                .frame(width: 100, height: 100)
                         }
-                    } else {
-                        NavigationLink {
-                            ZStack{
-                                FullScreenColorView(color: color)
-                            }
-                        } label: {
-                            ColorCell(color: color)
-                        }
+                    } label: {
+                        RambowCell()
+                            .frame(width: 100, height: 100)
                     }
                 }
-            }.padding()
-            
+            }
         }
-        
     }
     
 }

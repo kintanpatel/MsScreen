@@ -52,7 +52,7 @@ struct ScreenTestView: View {
                                 Color.black.opacity(0.1) // Add background color for alternating columns
                             }
                             VStack{
-                                Text("\(columnSpeeds[index].formatted()) ms").font(.system(size: 12)).lineLimit(1).foregroundColor(.white) // Display speed label
+                                Text("\(Int(columnSpeeds[index])) ms").font(.system(size: 12)).lineLimit(1).foregroundColor(.white) // Display speed label
                                 SpeedColumnView(speed: columnSpeeds[index], color: .blue) // Display animated column
                                 
                             }

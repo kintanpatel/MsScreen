@@ -51,18 +51,18 @@ struct AppScreenView<Content : View>: View {
                     }
                 }
             }.padding(.bottom,20)
-        }.ignoresSafeArea()
+        }.expandViewOutOfSafeArea(.all)
     }
 }
 
 
 #Preview{
     AppScreenView(showBackAsButton: false){
-        Text("Hello").foregroundStyle(.white)
+        Text("Hello").applyapplyForegroundStyle(.white)
     }
 }
 #Preview{
     AppScreenView(showBackAsButton: true){
-        Text("Hello").foregroundStyle(.white)
+        Text("Hello").applyapplyForegroundStyle(.white)
     }
 }
