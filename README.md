@@ -13,35 +13,17 @@ Detect dead pixels on your screen effortlessly with our app. Displaying various 
 
 ## Screenshots
 
+<img src="https://github.com/Kintanpatel4393/MsScreen/blob/main/SS/01.jpeg" width="40%" vspace="20" hspace="20"><img src="https://github.com/Kintanpatel4393/MsScreen/blob/main/SS/02.jpeg" width="40%" vspace="20" hspace="20">
 
+<img src="https://github.com/Kintanpatel4393/MsScreen/blob/main/SS/03.jpeg" width="40%" vspace="20" hspace="20"><img src="https://github.com/Kintanpatel4393/MsScreen/blob/main/SS/04.jpeg" width="40%" vspace="20" hspace="20">
 
-1.Splash Screen
+<img src="https://github.com/Kintanpatel4393/MsScreen/blob/main/SS/05.jpeg" width="40%" vspace="20" hspace="20"><img src="https://github.com/Kintanpatel4393/MsScreen/blob/main/SS/07.jpeg" width="40%" vspace="20" hspace="20">
 
-![App Screenshot](https://i.postimg.cc/MKC0MrMh/01.jpg)
+<img src="https://github.com/Kintanpatel4393/MsScreen/blob/main/SS/06.jpeg" width="40%" vspace="20" hspace="20">
 
-2.Home Screen
-
-![App Screenshot](https://i.postimg.cc/76ZS8FdT/02.jpg)
-
-3.ScalableText Screen
-
-![App Screenshot](https://i.postimg.cc/PJLZNmtX/03.jpg)
-
-4.ColorList Screen
-
-![App Screenshot](https://i.postimg.cc/jSyHzQyC/04.jpg)
-
-5.Raimbow Screen
-
-![App Screenshot](https://i.postimg.cc/W4n0yNWv/05.jpg)
-
-5.ScrenTest Screen
-
-![App Screenshot](https://i.postimg.cc/1zPpMnKB/07.jpg)
-
-6.Info Screen
-
-![App Screenshot](https://i.postimg.cc/Ss1CyZb1/06.jpg)
+## Pre-requisites
+ * Xcode SDK v15.1
+ * minimum iOS Version v15.0
 
 
 
